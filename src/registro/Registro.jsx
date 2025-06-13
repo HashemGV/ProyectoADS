@@ -70,7 +70,7 @@ const Registro = () => {
                 <div className="lotus-password-input">
                     <input
                     type={showPassword ? 'text' : 'password'}
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
