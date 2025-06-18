@@ -12,6 +12,11 @@ const Login = () => {
     navigate('/Registro')
   }
 
+  const navgate=useNavigate()
+  const handleClickk=()=>{
+    navgate('/Inicio')
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login attempt:', { username, password });
@@ -63,7 +68,7 @@ const Login = () => {
                   {showPassword ? <EyeSlashIcon /> : <EyeIcon />}
                 </button>
               </div>
-              <button type="submit" className="lotus-login-btn">Entrar</button>
+              <button type="submit" className="lotus-login-btn" onClick={handleClickk}>Entrar</button>
             </form>
             <div className="lotus-login-footer">
               <a href="#">Perdiste algo?</a>
